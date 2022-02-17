@@ -34,10 +34,6 @@ export default class GlobalNavCustomizerApplicationCustomizer
       head.insertAdjacentElement("beforeEnd", customStyle);
     }
 
-    if (!cssUrl) {
-      console.log(this.properties);
-    }
-
     return Promise.resolve();
   }
 }
