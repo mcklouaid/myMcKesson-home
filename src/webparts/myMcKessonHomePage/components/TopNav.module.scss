@@ -1,0 +1,41 @@
+.topNav {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem !important;
+
+    .myMcKessonFiller,
+    .myMckessonIcons {
+        width: 20%;
+    }
+    .myMckessonText {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 60%;
+    }
+
+    .myMckessonIcons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        i {
+            color: black;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+    }
+
+    .myStyle {
+        color: #ef8200;
+        font-weight: 800;
+    }
+    .mcKnetStyle {
+        color: #005a8c;
+        font-weight: 800;
+    }
+
+    .iconColor {
+        color: #005a8c;
+    }
+}

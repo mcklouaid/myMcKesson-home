@@ -1,0 +1,19 @@
+#O365_NavHeader,
+#SuiteNavWrapper,
+#sp-appBar {
+    display: none;
+}
+.CanvasZoneContainer {
+    padding: 0;
+}
+
+#workbenchPageContent {
+    left: 0;
+    border: none;
+}
+#workbenchPageContent div:nth-child(1),
+#workbenchPageContent div:nth-child(2){
+    margin: 0;
+    padding: 0;
+    overflow: none;
+}

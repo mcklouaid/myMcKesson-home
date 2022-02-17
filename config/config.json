@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "my-mc-kesson-home-page-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myMcKessonHomePage/MyMcKessonHomePageWebPart.js",
+          "manifest": "./src/webparts/myMcKessonHomePage/MyMcKessonHomePageWebPart.manifest.json"
+        }
+      ]
+    },
+    "global-nav-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/globalNavCustomizer/GlobalNavCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/globalNavCustomizer/GlobalNavCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyMcKessonHomePageWebPartStrings": "lib/webparts/myMcKessonHomePage/loc/{locale}.js",
+    "GlobalNavCustomizerApplicationCustomizerStrings": "lib/extensions/globalNavCustomizer/loc/{locale}.js"
+  }
+}

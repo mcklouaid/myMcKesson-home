@@ -1,0 +1,34 @@
+.navbarContainer {
+        display: flex;
+        flex-direction: row;
+        flex-basis: content;
+        justify-content: space-evenly;
+      }
+      
+      .iconElementsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        text-align: center;
+      
+        a {
+          text-decoration: none;
+          color: #005a8c;
+          &:hover,
+          &:visited,
+          &:active {
+            text-decoration: none;
+            color: #005a8c;
+          }
+        }
+      }
+      
+      .msIcon {
+        font-size: 2rem;
+      }
+      
+      .msIconColor,
+      .fontColor {
+        color: #005a8c;
+      }

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "initialPage": "https://mckessoncorp.sharepoint.com/site/DigitalExperience/_layouts/workbench.aspx",
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://mckessoncorp.sharepoint.com/_layouts/workbench.aspx",
+      "customActions": {
+        "6d5bb67f-6280-4587-afa3-1d8643ccc566": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    },
+    "globalNavCustomizer": {
+      "pageUrl": "https://mckessoncorp.sharepoint.com/_layouts/workbench.aspx",
+      "customActions": {
+        "6d5bb67f-6280-4587-afa3-1d8643ccc566": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

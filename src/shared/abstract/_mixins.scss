@@ -1,0 +1,81 @@
+@mixin trans($val...) {
+  -webkit-transition: $val;
+  -moz-transition: $val;
+  -o-transition: $val;
+  transition: $val;
+}
+
+@mixin btn--bg($bg) {
+  background: $bg;
+  &:hover {
+    background: darken($bg, 8%);
+    transition: all 0.3s ease;
+    @include trans(all 0.3s ease);
+  }
+  &:active {
+    background: darken($bg, 25%);
+  }
+}
+
+@mixin btn {
+  text-transform: uppercase;
+  color: $primary-black-pearl-blue;
+  text-decoration: none;
+  border-radius: 3px;
+  border: none;
+}
+
+/* for small phone iPhone 5/SE,320x568 */
+@mixin for-small-phone {
+  @media only screen 
+  and (max-width: 320px)
+  //and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+   { @content; }
+}
+
+/* for medium phone 6" device */
+@mixin for-medium-phone {
+  @media only screen 
+  and (min-width: 321px) 
+  and (max-width: 480px) 
+ // and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+  { @content; }
+}
+
+/* for big phone 8" device */
+@mixin for-medium-phone {
+  @media only screen 
+  and (min-width: 481px) 
+  and (max-width: 640px) 
+ // and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+  { @content; }
+}
+
+/* for iPad portrait 768x1024 */
+@mixin for-tablet-portrait-up {
+  @media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+ // and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+  { @content; }
+}
+
+/* for iPad landscape 1024x768 */
+@mixin for-tablet-landscape-up {
+  @media (min-width: 1025px)
+ // and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait)
+   { @content; }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1600px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1920px) { @content; }
+}
+

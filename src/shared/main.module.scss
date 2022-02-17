@@ -1,0 +1,17 @@
+//@import "~office-ui-fabric-react/dist/sass/References.scss";
+@import "../shared/abstract/fonts";
+@import "../shared/abstract/variables";
+@import "../shared/abstract/mixins";
+@import "../shared/base/typography";
+:global {
+      .btnMckesson {
+            @include btn;
+            @include btn--bg($primary-black-pearl-blue);
+            &__small {
+                  width: 4rem;
+                  padding: 0.313rem 0.625rem;
+                  font-size: 0.6rem;
+                  color: white;
+            }
+      }
+}
