@@ -1,13 +1,13 @@
-import { ThemeProvider } from "@fluentui/react-theme-provider";
-import { Stack, Toggle } from "office-ui-fabric-react";
 import * as React from "react";
-import { useState } from "react";
+
+import { Stack, Toggle } from "@fluentui/react";
 import { darkTheme, lightTheme } from "../../../Themes";
+
 import MainNav from "./MainNav";
+import { ThemeProvider } from "@fluentui/react-theme-provider";
+import TopNav2 from "./TopNav";
 import styles from "./MyMcKessonHomePage.module.scss";
-import TopNav from "./TopNav";
-
-
+import { useState } from "react";
 
 const MyMcKessonHomePage: React.FC = () => {
   const [useDarkMode, setUseDarkMode] = useState(false);
@@ -21,13 +21,13 @@ const MyMcKessonHomePage: React.FC = () => {
         theme={useDarkMode ? darkTheme : lightTheme}
         applyTo="element"
       >
-        <Toggle
+        {/* <Toggle
           label="Change themes"
           onText="Dark Mode"
           offText="Light Mode"
           onChange={() => setUseDarkMode(!useDarkMode)}
-        />
-        <TopNav />
+        /> */}
+        <TopNav2 />
         <MainNav />
         <h6>Hello Louai</h6>
         <div className={styles.homeUserCardsContainer}>

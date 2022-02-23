@@ -3,6 +3,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2rem !important;
+    transition-duration: 4s;
+    transition-delay: 2s;
 
     .myMcKessonFiller,
     .myMckessonIcons {
@@ -12,6 +14,8 @@
         text-align: center;
         font-size: 1.5rem;
         width: 60%;
+        transition-duration: 4s;
+        transition-delay: 2s;
     }
 
     .myMckessonIcons {
@@ -37,5 +41,24 @@
 
     .iconColor {
         color: #005a8c;
+    }
+
+    .searchField, .ms-SearchBox{
+        transition: width 5s;
+        width:10%;
+    }
+
+    .searchBoxStyles{
+        width: 100%;
+    }
+
+    .hideIcon{
+        display:none;
+        transition-property: display;  
+    }
+
+    .showIcon, .ms-SearchBox, .searchField{
+        display:inline-flex;
+        width: 100%;
     }
 }

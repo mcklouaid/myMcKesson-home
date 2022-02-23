@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { IMainNav } from './IMyMcKessonHomePageProps';
-import { Icon } from 'office-ui-fabric-react';
+import { Icon } from '@fluentui/react/lib/Icon';
 import styles from './MainNav.module.scss';
 
 export default class MainNav extends React.Component<{}> {
